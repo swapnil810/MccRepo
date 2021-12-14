@@ -12,9 +12,7 @@ interface ApiInterface {
     fun getResultData() : Call<List<Result<Data>>>
 
     companion object {
-
         var BASE_URL = "https://reqres.in/api/"
-
         fun create() : ApiInterface {
 
             val retrofit = Retrofit.Builder()

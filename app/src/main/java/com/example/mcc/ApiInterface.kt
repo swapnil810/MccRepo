@@ -8,12 +8,12 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 
 interface ApiInterface {
-    @GET("volley_array.json")
+    @GET("users?page=1")
     fun getResultData() : Call<List<Result<Data>>>
 
     companion object {
 
-        var BASE_URL = "http://velmm.com/apis/"
+        var BASE_URL = "https://reqres.in/api/"
 
         fun create() : ApiInterface {
 

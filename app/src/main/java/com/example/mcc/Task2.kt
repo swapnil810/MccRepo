@@ -1,5 +1,6 @@
 package com.example.mcc
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -52,6 +53,7 @@ class Task2 : AppCompatActivity(), View.OnClickListener {
             }
 
             R.id.view_9th_op -> {
+                view_9th_op.setBackgroundColor(Color.parseColor("#D60C0C"));
 
             }
 

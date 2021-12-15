@@ -15,6 +15,7 @@ class Task2 : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_task2)
 
         //this method is used to pass current context of the click operation
+        view_9th_op.setOnClickListener(this)
         et_input.setOnClickListener(this)
         btn_i.setOnClickListener(this)
         lin_25_operation.setOnClickListener(this)
@@ -26,7 +27,6 @@ class Task2 : AppCompatActivity(), View.OnClickListener {
         when (v!!.id) {
             R.id.btn_i -> {
                 val inputText = et_input.text.toString().trim();
-
                 if (inputText.equals("9")) {
                     lin_1st_operation.isVisible = true
                     lin_16st_operation.isVisible = false
@@ -48,8 +48,11 @@ class Task2 : AppCompatActivity(), View.OnClickListener {
                     lin_16st_operation.isVisible = false
                     lin_25_operation.isVisible = false
 
-
                 }
+            }
+
+            R.id.view_9th_op -> {
+
             }
 
         }
